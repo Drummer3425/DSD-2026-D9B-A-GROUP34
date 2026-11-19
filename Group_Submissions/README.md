@@ -83,7 +83,7 @@ The 4-bit input is first given to the Fibonacci detection logic, which checks wh
 - Output duration: In the current Verilog implementation, F is not held in S2. This keeps the logic simple, but the output may be too brief to observe on a physical LED. An additional result register could be used to hold the result until ACK.
 Overall, the design uses simple combinational logic and a two-state Mealy FSM, making it suitable for implementation in Verilog, Logisim and the Boolean Board Spartan-7 FPGA.
 
-![Block diagram](DSD-2026-D9B-A-GROUP34/Group_Submissions/Photos/4-bit)
+![Block diagram](Group_Submissions/Photos/4-bit Fibonacci Detector Block Diagram.png)
 
 ## 5. FSM Design
 State whether the design uses an FSM. If yes, specify Moore/Mealy, states/encoding, state diagram, state table, transition conditions and reset behaviour. If not, justify the alternative.
