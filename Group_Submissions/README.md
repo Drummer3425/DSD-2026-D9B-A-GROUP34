@@ -119,7 +119,7 @@ The design uses an active-high asynchronous reset. Whenever RESET = 1, the FSM i
 The design uses a 2-state Mealy FSM with one state bit. Its output depends on the current state and input conditions, allowing the Fibonacci result to be generated without waiting for an additional clock state.
 
 **Diagram:** [Path/link]  
-**State table:** [Photos/1state.png]
+**State table:** [State](Photos/1state.png)
 
 ## 6. Logisim Implementation
 - Logisim version: [Version]
