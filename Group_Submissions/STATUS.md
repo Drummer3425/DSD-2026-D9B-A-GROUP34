@@ -1,9 +1,9 @@
 # Group Progress Status
 
 **Class:** [D9A/D9B]  
-**Group ID:** [D9A_Group01]  
-**Project title:** [Title]  
-**Group leader:** [Name]
+**Group ID:** [D9A_B_Group01]  
+**Project title:** [FIBONACCI NUMBER DETECTOR (4-bit)]  
+**Group leader:** [Adway Patil]
 
 ## 1. Current milestone status
 Use: `Not Started`, `In Progress`, `Completed` or `Blocked`.
