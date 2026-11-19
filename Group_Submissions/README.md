@@ -6,12 +6,12 @@
 |---|---|---|---|
 | Group leader | Adway Patil | 48 | Drummer3425 |
 | Member 2 | Rajveer Powar | 54 | RajveerPowar |
-| Member 3 | Nirja Bhosle | [Roll no.] | NirjaBhosle |
+| Member 3 | Nirja Bhosle | 5 | NirjaBhosle |
 | Member 4 | Abhijit Kumar | 30 | kumarabhijit-eng |
 
 **Class:** [D9A/D9B]  
 **Group ID:** [e.g. D9A_B_Group34]  
-**Repository URL:** [Fork URL]  
+**Repository URL:** https://github.com/Drummer3425/DSD-2026-D9B-A-GROUP34  
 **Final Pull Request URL:** [URL]
 
 ## 2. Assigned Problem Statement
