@@ -75,7 +75,7 @@ The design is feasible because it requires only basic combinational logic, two F
 5. Output Module: Generates the FIB and NON_FIB signals to indicate the detection result through the LEDs.
 2. Data and Control Flow
 The 4-bit input is first given to the Fibonacci detection logic, which checks whether it matches any of the seven Fibonacci numbers. When START is activated in S1, the FSM generates the output based on the detection result. The FSM then moves to S2 and waits for ACK. Once ACK is activated, it returns to S1. RESET can initialise the FSM at any time.
-4.4 Design Trade-offs
+3. Design Trade-offs
 - Mealy FSM: Provides immediate output based on the input and current state, reducing output delay.
 - Two-state design: Keeps the controller simple and requires fewer state bits.
 - Combinational detection: Direct comparison with known Fibonacci values makes the design easy to implement and verify.
@@ -83,7 +83,7 @@ The 4-bit input is first given to the Fibonacci detection logic, which checks wh
 - Output duration: In the current Verilog implementation, F is not held in S2. This keeps the logic simple, but the output may be too brief to observe on a physical LED. An additional result register could be used to hold the result until ACK.
 Overall, the design uses simple combinational logic and a two-state Mealy FSM, making it suitable for implementation in Verilog, Logisim and the Boolean Board Spartan-7 FPGA.
 
-![Block diagram](path/to/block_diagram.png)
+![Block diagram]()
 
 ## 5. FSM Design
 State whether the design uses an FSM. If yes, specify Moore/Mealy, states/encoding, state diagram, state table, transition conditions and reset behaviour. If not, justify the alternative.
