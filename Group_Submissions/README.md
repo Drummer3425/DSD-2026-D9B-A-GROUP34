@@ -16,7 +16,7 @@
 
 ## 2. Assigned Problem Statement
 - **Number/title:** FINONACCI NUMBER DETECTOR (4-BIT)
-- **Problem summary:** [In your own words]
+- **Problem summary:** The aim of this project is to build a 4-bit Fibonacci Number Detector that checks whether a given number (0–15) is a Fibonacci number (0, 1, 2, 3, 5, 8 or 13). The circuit uses an FSM to control the detection process and displays the result using two LEDs. For the H2 modification, we have to convert the original Moore FSM into a Mealy FSM so that the output is generated immediately based on the input, without waiting for the next clock cycle.
 - **Objective:** [What must the system achieve?]
 - **Inputs and outputs:** [List signals, widths and meaning]
 - **Constraints and assumptions:** [List and justify]
