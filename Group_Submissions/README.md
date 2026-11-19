@@ -83,10 +83,40 @@ The 4-bit input is first given to the Fibonacci detection logic, which checks wh
 - Output duration: In the current Verilog implementation, F is not held in S2. This keeps the logic simple, but the output may be too brief to observe on a physical LED. An additional result register could be used to hold the result until ACK.
 Overall, the design uses simple combinational logic and a two-state Mealy FSM, making it suitable for implementation in Verilog, Logisim and the Boolean Board Spartan-7 FPGA.
 
-![Block diagram](Group_Submissions/Photos/4-bit Fibonacci Detector Block Diagram.png)
+![Block diagram](Group_Submissions/Photos/123.png)
 
 ## 5. FSM Design
-State whether the design uses an FSM. If yes, specify Moore/Mealy, states/encoding, state diagram, state table, transition conditions and reset behaviour. If not, justify the alternative.
+The design uses a Finite State Machine (FSM) implemented using a Mealy Model. The FSM consists of two states, S1 and S2, which control the Fibonacci detection process based on the START and ACK inputs.
+1. State Encoding
+State	Encoding	Description
+S1	0	IDLE – waits for START
+S2	1	WAIT_ACK – waits for ACK
+
+A single flip-flop is used to store the current state.
+
+2. State Table
+Present State	START	ACK	Next State
+S1	0	X	S1
+S1	1	X	S2
+S2	X	0	S2
+S2	X	1	S1
+
+Here, X represents a don't-care condition.
+3. Output Logic
+The output is generated using Mealy logic:
+- In S1, when START = 1, F = fib.
+- In S2, F = 0.
+- FIB = F.
+- NON_FIB = 1 when the FSM is in S1, START = 1 and the input is not Fibonacci; otherwise, it is 0.
+4. Transition Conditions
+- S1 → S1: When START = 0.
+- S1 → S2: When START = 1.
+- S2 → S2: When ACK = 0.
+- S2 → S1: When ACK = 1.
+5. Reset Behaviour
+The design uses an active-high asynchronous reset. Whenever RESET = 1, the FSM immediately returns to its initial state S1 (IDLE), irrespective of the clock signal.
+6. Summary
+The design uses a 2-state Mealy FSM with one state bit. Its output depends on the current state and input conditions, allowing the Fibonacci result to be generated without waiting for an additional clock state.
 
 **Diagram:** [Path/link]  
 **State table:** [Path/link]
