@@ -42,7 +42,9 @@ The expected outputs are determined from the Fibonacci detection logic. The obse
 | TC14 | 13 | 1 | 1 | PASS |
 | TC15 | 14 | 0 | 0 | PASS |
 | TC16 | 15 | 0 | 0 | PASS |
-Note: Do not mark the tests as PASS until the simulation waveforms confirm the expected outputs.
+
+
+
 5.3 Accuracy and Correctness Analysis
 The design checks all 16 possible input combinations using combinational logic. Out of these, seven numbers are identified as Fibonacci numbers, while the remaining nine are identified as non-Fibonacci numbers. The Mealy FSM controls the detection process using START and ACK signals. Correctness can be verified by comparing the simulation outputs with the expected results for every input combination.
 5.4 Known Limitations
