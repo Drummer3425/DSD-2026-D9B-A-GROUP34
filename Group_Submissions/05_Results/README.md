@@ -1,6 +1,7 @@
 5.1 Test Case Table
 The following test cases cover all 16 possible input combinations of the 4-bit Fibonacci Number Detector.
 Test Case	Input X (Binary)	Decimal	Expected Result
+Test Case	Input (Binary)	Decimal	Expected Output
 TC01	0000	0	Fibonacci
 TC02	0001	1	Fibonacci
 TC03	0010	2	Fibonacci
