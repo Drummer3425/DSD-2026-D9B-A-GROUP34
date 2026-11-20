@@ -46,9 +46,11 @@ The expected outputs are determined from the Fibonacci detection logic. The obse
 
 
 5.3 Accuracy and Correctness Analysis
+
 The design checks all 16 possible input combinations using combinational logic. Out of these, seven numbers are identified as Fibonacci numbers, while the remaining nine are identified as non-Fibonacci numbers. The Mealy FSM controls the detection process using START and ACK signals. Correctness can be verified by comparing the simulation outputs with the expected results for every input combination.
 
 5.4 Known Limitations
+
 - The output F becomes 0 when the FSM enters S2.
 - The result is not stored or held until ACK.
 - The push buttons may produce unwanted multiple transitions due to mechanical bouncing.
@@ -56,4 +58,5 @@ The design checks all 16 possible input combinations using combinational logic. 
 - The current design does not include an error-detection state.
 
 5.5 Conclusion
+
 The 4-bit Fibonacci Number Detector was designed using a two-state Mealy FSM and combinational Fibonacci detection logic. The design identifies Fibonacci and non-Fibonacci numbers and indicates the result through separate LED outputs. The implementation demonstrates how FSMs and combinational logic can be combined using Verilog. Simulation and FPGA testing can be used to verify the correctness and functionality of the design.
